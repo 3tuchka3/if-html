@@ -1,0 +1,242 @@
+@import url("fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1232px;
+}
+
+/*---------------------header-------------------------*/
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../img/header img/castelmezzano-1979546 1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 39%;
+}
+.header_inner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header_nav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.nav_main {
+  display: flex;
+  align-items: center;
+}
+.nav_text {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_text a {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.nav_text a:hover {
+  border-bottom: 4px solid #f5bd41;
+}
+.nav_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 114px;
+  margin-left: 68px;
+}
+#nav_night {
+  width: 30px;
+  height: 30px;
+}
+.header_desc {
+  margin-top: 200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.input_sector {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 120px;
+}
+.header_input-labels {
+  margin-bottom: 24px;
+}
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0px 240px 0px 10px;
+}
+.input_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 65px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #f3f3f4;
+  border-right: none;
+}
+#input_citi {
+  padding-left: 25px;
+  width: 490px;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+#input_citi:hover {
+  border: 4px solid #f5bd41;
+}
+#input_calendar {
+  padding-left: 25px;
+  width: 270px;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+#input_calendar:hover {
+  border: 4px solid #f5bd41;
+}
+#input_amount {
+  padding-left: 25px;
+  width: 324px;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+#input_amount:hover {
+  border: 4px solid #f5bd41;
+}
+.header_input-button {
+  width: 160px;
+  height: 108%;
+  border: none;
+  background: #3077c6;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.header_links {
+  margin: 130px auto 0px;
+}
+.header_links a {
+  margin: 0 8px;
+}
+/*------------------advantages------------------------*/
+.advantages {
+  width: 100%;
+  height: 570px;
+}
+.advantages_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages_header {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages_header p {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #383838;
+}
+.advantages_header img {
+  width: 100px;
+  height: 4px;
+}
+.advantages_items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.advantages_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages_item img {
+  margin-bottom: 48px;
+}
+.advantages_item p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #383838;
+}
+/*-------------------------------footer--------------------------------*/
+footer {
+  width: 100%;
+  background: #10367c;
+  display: flex;
+}
+.footer_inner {
+  margin: 120px auto 0px;
+  max-width: 1440px;
+  width: 100%;
+  color: #ffffff;
+}
+.footer_columns {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 64px;
+}
+.footer_column {
+  width: 33.3333%;
+}
+.footer_column li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+}
+.footer_column-first {
+  font-weight: 500;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer_desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 120px;
+}
