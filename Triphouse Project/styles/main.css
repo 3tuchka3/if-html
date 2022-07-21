@@ -7,6 +7,7 @@
 }
 .container {
   margin: 0 auto;
+  padding: 0 10px;
   max-width: 1232px;
 }
 
@@ -80,7 +81,7 @@ header {
   width: 100%;
   height: 120px;
 }
-.header_input-labels{
+.header_input-labels {
   margin-bottom: 24px;
 }
 label {
@@ -91,14 +92,17 @@ label {
   color: #ffffff;
   margin: 0px 240px 0px 10px;
 }
-.input_items{
+.input_items {
   display: flex;
   flex-direction: row;
+  align-items: center;
   height: 65px;
   background: #ffffff;
   border-radius: 8px;
+  border: 2px solid #f3f3f4;
+  border-right: none;
 }
-#input_citi{
+#input_citi {
   padding-left: 25px;
   width: 490px;
   height: 100%;
@@ -106,10 +110,10 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_citi:hover{
+#input_citi:hover {
   border: 4px solid #f5bd41;
 }
-#input_calendar{
+#input_calendar {
   padding-left: 25px;
   width: 270px;
   height: 100%;
@@ -117,10 +121,10 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_calendar:hover{
+#input_calendar:hover {
   border: 4px solid #f5bd41;
 }
-#input_amount{
+#input_amount {
   padding-left: 25px;
   width: 324px;
   height: 100%;
@@ -128,26 +132,26 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_amount:hover{
+#input_amount:hover {
   border: 4px solid #f5bd41;
 }
-.header_input-button{
-  width: 149px;
-  height: 100%;
+.header_input-button {
+  width: 160px;
+  height: 108%;
   border: none;
-  background: #3077C6;
+  background: #3077c6;
   border-radius: 8px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.header_links{
+.header_links {
   margin: 130px auto 0px;
 }
-.header_links a{
+.header_links a {
   margin: 0 8px;
 }
 /*------------------advantages------------------------*/
@@ -199,7 +203,6 @@ label {
 /*-------------------------------footer--------------------------------*/
 footer {
   width: 100%;
-  height: 630px;
   background: #10367c;
   display: flex;
 }
@@ -216,8 +219,7 @@ footer {
   margin-bottom: 64px;
 }
 .footer_column {
-  width: 400px;
-  height: 310px;
+  width: 33.3333%;
 }
 .footer_column li {
   list-style-type: none;
@@ -236,4 +238,5 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 120px;
 }
