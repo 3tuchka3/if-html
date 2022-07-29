@@ -110,7 +110,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_citi:hover {
+#input_citi:focus {
   border: 4px solid #f5bd41;
 }
 #input_calendar {
@@ -121,7 +121,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_calendar:hover {
+#input_calendar:focus {
   border: 4px solid #f5bd41;
 }
 #input_amount {
@@ -132,7 +132,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_amount:hover {
+#input_amount:focus {
   border: 4px solid #f5bd41;
 }
 .header_input-button {
