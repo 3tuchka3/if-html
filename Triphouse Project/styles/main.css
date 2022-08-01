@@ -15,7 +15,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("./../img/header img/castelmezzano-1979546 1.png");
+  background-image: url("./../img/header_img/castelmezzano-1979546 1.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 39%;
@@ -110,7 +110,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_citi:hover {
+#input_citi:focus {
   border: 4px solid #f5bd41;
 }
 #input_calendar {
@@ -121,7 +121,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_calendar:hover {
+#input_calendar:focus {
   border: 4px solid #f5bd41;
 }
 #input_amount {
@@ -132,7 +132,7 @@ label {
   border-radius: 8px;
   outline: none;
 }
-#input_amount:hover {
+#input_amount:focus {
   border: 4px solid #f5bd41;
 }
 .header_input-button {
@@ -191,6 +191,11 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.advantages_item-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 48px;
 }
 .advantages_item img {
   margin-bottom: 48px;
