@@ -41,6 +41,7 @@
               <a href="#">
                 <img src="img/header_img/AccountCircle.png" alt="image" />
               </a>
+                <a href="#"><img id="header_nav-burger" src="img/header_img/header_burger.svg" alt="header_burger"></a>
             </div>
           </div>
         </div>
@@ -48,18 +49,72 @@
           Discover stays <br />
           to live, work or just relax
         </p>
-        <div class="input_sector">
-          <div class="header_input-labels">
-            <label for="input_citi">Your destination or hotel name</label>
-            <label for="input_calendar">Check-in — Check-out</label>
-          </div>
-          <form class="input_items">
-            <input id="input_citi" type="text" name="input_citi" />
-            <input id="input_calendar" type="date" name="input_calendar" />
-            <input id="input_amount" type="text" name="input_amount" />
-            <button class="header_input-button">Search</button>
-          </form>
+        <div class="header_form-subtitle">
+          <label class="form_subtitle-destination form-subtitle-item"
+            >Your destination or hotel name</label
+          >
+          <label class="form_subtitle-checkIn form-subtitle-item"
+            >Check in</label
+          >
+          <label class="form_subtitle-checkOut form-subtitle-item"
+            >Check out</label
+          >
         </div>
+        <form action="#" class="header_form">
+          <img
+            class="header_search-icon"
+            src="img/header_img/header_search.svg"
+            alt="header_search-icon"
+          />
+          <input
+            id="destination"
+            name="destination"
+            type="text"
+            class="header_form-destination"
+            placeholder="Your destination or hotel name"
+          />
+          <div class="header_form-check">
+            <label for="check-in" class="header_form-checkIn">Check-in</label>
+            <input
+              id="check-in"
+              name="check-in"
+              type="date"
+              class="form-checkIn"
+            />
+            <label for="check-out" class="header_form-checkOut"
+              >Check-out</label
+            >
+            <input
+              id="check-out"
+              name="check-out"
+              type="date"
+              class="form-checkOut"
+            />
+          </div>
+          <div class="header_form-select">
+            <select
+              name="adults"
+              id="adults"
+              class="form_select-adults select-item"
+            >
+              <option selected>Adults</option>
+            </select>
+            <img src="img/header_img/header_form-line%202.svg" alt="" />
+            <select
+              name="children"
+              id="children"
+              class="form_select-children select-item"
+            >
+              <option selected>Children</option>
+            </select>
+            <img src="img/header_img/header_form-line%202.svg" alt="" />
+            <select name="room" id="room" class="form_select-room select-item">
+              <option selected>Rooms</option>
+            </select>
+          </div>
+          <button type="submit" class="header_form-button">Search</button>
+        </form>
+
         <div class="header_links">
           <a href="#"
             ><img src="./img/header_img/google-play-badge.png" alt="image"
