@@ -146,7 +146,13 @@ header {
 .header_search-icon {
   visibility: hidden;
 }
-.header_form-destination {
+.header_form-destination{
+  display: flex;
+  justify-content: center;
+}
+.header_form-destination input {
+  width: 100%;
+  height: 100%;
   padding-left: 10px;
   border: none;
   border-radius: 8px;
@@ -156,7 +162,7 @@ header {
   font-weight: 400;
   font-size: 18px;
 }
-.header_form-destination:focus {
+.header_form-destination input:focus {
   border: 3px solid #f5bd41;
   border-radius: 8px;
 }
@@ -412,6 +418,7 @@ footer {
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
+    margin-top: 50px;
   }
   .header_form-subtitle {
     display: none;
@@ -422,35 +429,47 @@ footer {
   .header_search-icon::before {
     visibility: visible;
   }
+  .header_search-icon{
+    position: absolute;
+  }
   .header_form-destination {
     position: relative;
   }
   .header_form {
-    background-color: #f5bd41;
     display: grid;
+    /*grid-gap: 10px;*/
     grid-template-columns: 50% 50%;
-    grid-template-rows: 48px 48px 48px 48px;
+    grid-template-rows: 60px 60px 60px 60px;
+    background-color: #f5bd41 ;
+    width: 100%;
+    height: 100%;
   }
   .header_form-destination {
+    margin: 8px auto 4px;
     grid-column: 1 / 3;
     grid-row: 1;
     height: 48px;
+    width: 96%;
   }
   .header_form-check{
-    border-radius: 80px;
+    grid-gap: 10px;
+    margin: 4px auto 4px;
+    border-radius: 8px;
     grid-column: 1 / 3;
     grid-row: 2;
+    height: 100%;
+    width: 96%;
   }
   .header_form-checkIn{
-    margin: 4px 4px 4px 8px;
+    border-radius: 8px;
   }
   .header_form-checkOut{
-    margin: 4px 8px 4px 4px;
+    border-radius: 8px;
   }
   .header_form-select {
+    margin: 14px auto 4px;
     border-radius: 80px;
-    margin: 4px 8px 4px 8px;
-    width: 99%;
+    width: 96%;
     grid-column: 1/3;
     grid-row: 3;
     display: flex;
@@ -459,6 +478,12 @@ footer {
   .header_form-button {
     grid-column: 1/3;
     grid-row: 4;
+    margin: 4px auto 8px;
+    width: 96%;
+    height: 48px;
+  }
+  .header_links{
+    /*margin-top: 300px;*/
   }
   /*----------------------advantages------------------------------------*/
   .advantages_items {
