@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .col-lg-1 {
   width: var(--col-width);
 }
@@ -141,10 +144,12 @@ header {
   width: 100%;
   height: 64px;
   display: grid;
-  grid-template-columns: 0.00001% 38% 21% 26% 16%;
+  grid-template-columns:  38% 21% 26% 16%;
 }
 .header_search-icon {
   visibility: hidden;
+  width: 0;
+  height: 0;
 }
 .header_form-destination{
   display: flex;
@@ -168,16 +173,24 @@ header {
 }
 .header_form-check {
   display: flex;
+  flex-direction: row;
   border-radius: 8px;
 }
-.header_form-checkIn {
+.form_check-item{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.form_checkIn-Label {
   display: none;
 }
-.header_form-checkOut {
+.form_checkOut-label {
   display: none;
 }
 .form-checkIn {
-  width: 50%;
+  width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   font-style: normal;
@@ -192,7 +205,8 @@ header {
   border-radius: 8px;
 }
 .form-checkOut {
-  width: 50%;
+  width: 100%;
+  height: 100%;
   border: none;
   outline: none;
   font-style: normal;
@@ -411,6 +425,9 @@ footer {
   .nav_text {
     display: none;
   }
+  .nav_button{
+    margin: 0 ;
+  }
   #header_nav-burger {
     display: initial;
   }
@@ -426,30 +443,47 @@ footer {
   .header_form-select {
     display: initial;
   }
-  .header_search-icon::before {
-    visibility: visible;
-  }
   .header_search-icon{
+    /*visibility: visible;
+    display: block;
+    width: 10px;
+    height: 10px;
     position: absolute;
-  }
-  .header_form-destination {
-    position: relative;
+    top: 30px ;*/
   }
   .header_form {
     display: grid;
     /*grid-gap: 10px;*/
     grid-template-columns: 50% 50%;
-    grid-template-rows: 60px 60px 60px 60px;
+    /*grid-template-rows: 60px 60px 60px 60px;*/
     background-color: #f5bd41 ;
     width: 100%;
     height: 100%;
+    padding: 8px;
   }
   .header_form-destination {
-    margin: 8px auto 4px;
+    margin: 0 auto 4px;
     grid-column: 1 / 3;
     grid-row: 1;
     height: 48px;
-    width: 96%;
+    width: 100%;
+  }
+
+  .header_form-destination input:focus {
+    border: none;
+    border-radius: 8px;
+  }
+  .select-item:focus {
+    border: none;
+    border-radius: 8px;
+  }
+  .form-checkIn:focus {
+    border: none;
+    border-radius: 8px;
+  }
+  .form-checkOut:focus {
+    border: none;
+    border-radius: 8px;
   }
   .header_form-check{
     grid-gap: 10px;
@@ -458,32 +492,70 @@ footer {
     grid-column: 1 / 3;
     grid-row: 2;
     height: 100%;
-    width: 96%;
+    width: 100%;
   }
-  .header_form-checkIn{
+  .form_check-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    background-color: #ffffff;
+    border-radius:8px  ;
+  }
+  .form_checkIn-Label{
+    display: block;
+    padding-right: 30px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #383838;
+  }
+  .form_checkOut-label{
+    display: block;
+    padding-right: 30px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #383838;
+  }
+  .form-checkIn{
     border-radius: 8px;
   }
-  .header_form-checkOut{
+  .form-checkOut{
     border-radius: 8px;
   }
   .header_form-select {
     margin: 14px auto 4px;
-    border-radius: 80px;
-    width: 96%;
-    grid-column: 1/3;
-    grid-row: 3;
+    grid-column: 1 / 3;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  .header_form-select img{
+    display: block;
+  }
+  .select-item{
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
   }
   .header_form-button {
     grid-column: 1/3;
     grid-row: 4;
-    margin: 4px auto 8px;
-    width: 96%;
+    margin: 4px auto 0px;
+    width: 100%;
     height: 48px;
   }
   .header_links{
-    /*margin-top: 300px;*/
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
   }
   /*----------------------advantages------------------------------------*/
   .advantages_items {
