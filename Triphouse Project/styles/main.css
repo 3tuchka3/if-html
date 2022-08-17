@@ -84,6 +84,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+}
+.nav_text a{
+  position: relative;
+}
+.nav_text a:hover:after{
+  content: "";
+  position: absolute;
+  background: #f5bd41;
+  left: 5%;
+  margin:0 auto;
+  bottom: -5px;
+  width: 90%;
+  height: 4px;
 }
 .nav_text a {
   height: 100%;
@@ -93,9 +107,9 @@ header {
   line-height: 28px;
   color: #ffffff;
 }
-.nav_text a:hover {
+/*.nav_text a:hover {
   border-bottom: 4px solid #f5bd41;
-}
+}*/
 .nav_button {
   display: flex;
   justify-content: space-between;
@@ -289,6 +303,16 @@ header {
   font-size: 40px;
   font-weight: 500;
   color: #383838;
+  position: relative;
+}
+.advantages_header p:after{
+  content: "";
+  position: absolute;
+  background: #f5bd41;
+  left: 35%;
+  bottom: -20px;
+  width: 100px;
+  height: 4px;
 }
 .advantages_header img {
   width: 100px;
